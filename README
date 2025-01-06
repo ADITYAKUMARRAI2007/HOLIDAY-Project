@@ -1,0 +1,60 @@
+# Memory Game
+
+A fun and interactive memory card game where players match pairs of cards. Built using **HTML**, **CSS**, and **JavaScript**.
+
+---
+
+## Game Preview
+
+![Game Preview](`DALL·E 2025-01-06 19.48.46 - A visually appealing preview image of a memory card game. The image should showcase a grid of 12 cards arranged in a 4x3 format on a light-colored tab.webp`)  
+*Above is a preview of the memory game interface.*
+
+---
+
+## Features
+
+- **Interactive Gameplay**: Flip cards to match pairs.
+- **Score Tracker**: Displays the number of matches found.
+- **Win Screen**: Shows a congratulatory message when all pairs are matched.
+- **Play Again Option**: Restart the game to play again.
+
+---
+
+## Files Overview
+
+1. **`adi.html`**: Main HTML file that structures the game layout.
+2. **`style.css`**: Styles the game interface, including the grid layout and cards.
+3. **`app.js`**: Contains the game logic for flipping cards, matching pairs, and managing the win condition.
+
+---
+
+## How to Use
+
+1. Clone or download this repository.
+2. Ensure the required images are in the same directory as the game files:
+   - `blank.png` (Card back)
+   - `white.png` (Matched card background)
+   - Card face images: `fries (1).png`, `cheeseburger (1).png`, `ice-cream.png`, etc.
+3. Open **`adi.html`** in a modern web browser.
+4. Play the game by clicking cards to reveal them and match pairs.
+
+---
+
+## Game Logic
+
+1. The game board is a grid of facedown cards.
+2. Flip cards to reveal the images underneath.
+3. If two cards match, they stay flipped. If not, they turn back over.
+4. The game ends when all pairs are matched, showing a congratulatory message and a "Play Again" button.
+
+---
+
+## How to Customize
+
+- **Add More Cards**: Update the `cardArray` in `app.js` with new card names and images. Example:
+   ```javascript
+   const cardArray = [
+       { name: 'pizza', img: 'pizza.png' },
+       { name: 'sushi', img: 'sushi.png' },
+       ...
+   ];
